@@ -13,13 +13,13 @@ steps:
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
-    azureResourceManagerConnection: 'AzureRmPipeline-conn'
+    azureResourceManagerConnection: 'AzureRmPipeline-conn.'
     subscriptionId: '6cf49fa5-d6da-4d13-aa7a-c1900d0f345e'
     action: 'Create Or Update Resource Group'
     resourceGroupName: 'testrg'
     location: 'East US'
     templateLocation: 'URL of the file'
-    csmFileLink: 'https://raw.githubusercontent.com/samking7860/AzureRmPipeline-repo/main/create_web_app/azuredeploy.json?token=GHSAT0AAAAAACCN4UC7TF6JOUGBSCWAONGCZC2SNBQ'
-    overrideParameters: '-projectName myarmpipeline'
+    csmFileLink: 'https://raw.githubusercontent.com/samking7860/AzureRmPipeline-repo/main/create_web_app/azuredeploy.json?token=GHSAT0AAAAAACCN4UC6Z3SEINCVHSAUNIFEZC3E7OQ'
+    overrideParameters: '-projectName zemluff'
     deploymentMode: 'Incremental'
     deploymentName: 'DeployPipelineTemplate'
